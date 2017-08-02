@@ -3,6 +3,7 @@ var express = require('express'),
     enter   = require('../controllers/enter'),
     story   = require('../controllers/story'),
     about   = require('../controllers/about'),
+    guide   = require('../controllers/guide'),
     char   = require('../controllers/char'),
     chat   = require('../controllers/chat'),
     create  = require('../controllers/create'),
@@ -15,6 +16,7 @@ var express = require('express'),
 router.route('/').get(enter);
 router.route('/story').get(story);
 router.route('/about').get(about);
+router.route('/guide').get(guide);
 router.route('/char').get(char);
 router.route('/chat').get(chat);
 router.route('/person')
